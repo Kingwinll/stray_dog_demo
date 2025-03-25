@@ -31,11 +31,11 @@ const Solutions = () => {
   ];
 
   return (
-    <section id="solutions" className="py-20">
+    <section id="solutions" className="py-20 bg-gray-900">
       <div className="container mx-auto px-4">
         <div className="max-w-3xl mx-auto text-center mb-16">
           <motion.h2 
-            className="text-3xl md:text-4xl font-bold mb-6 text-gray-800"
+            className="text-3xl md:text-4xl font-bold mb-6 text-white"
             initial={{ opacity: 0 }}
             animate={isInView ? { opacity: 1 } : {}}
             transition={{ duration: 0.6 }}
@@ -44,7 +44,7 @@ const Solutions = () => {
             我們的解決方案
           </motion.h2>
           <motion.p
-            className="text-xl text-gray-600"
+            className="text-xl text-gray-300"
             initial={{ opacity: 0, y: 20 }}
             animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.6, delay: 0.2 }}
@@ -73,8 +73,8 @@ const Solutions = () => {
                 </div>
               </div>
               <div className="md:w-1/2">
-                <h3 className="text-2xl font-semibold mb-4 text-gray-800">{solution.title}</h3>
-                <p className="text-lg text-gray-600 mb-6">{solution.description}</p>
+                <h3 className="text-2xl font-semibold mb-4 text-amber-400">{solution.title}</h3>
+                <p className="text-lg text-gray-300 mb-6">{solution.description}</p>
                 <div className="w-20 h-1 bg-amber-500"></div>
               </div>
             </motion.div>
@@ -87,12 +87,12 @@ const Solutions = () => {
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.5, delay: 0.8 }}
         >
-          <p className="text-lg text-gray-700 max-w-3xl mx-auto mb-8">
+          <p className="text-lg text-gray-300 max-w-3xl mx-auto mb-8">
             這些解決方案需要資金支持才能持續進行。您的每一筆捐款，都能幫助更多流浪狗獲得照顧和愛。
           </p>
           <motion.a 
             href="#donate" 
-            className="bg-amber-600 hover:bg-amber-700 text-white px-8 py-3 rounded-full inline-block font-medium text-lg"
+            className="bg-amber-500 hover:bg-amber-600 text-gray-900 px-8 py-3 rounded-full inline-block font-medium text-lg"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           >
