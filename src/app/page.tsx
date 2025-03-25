@@ -6,6 +6,7 @@ import Problems from '@/components/Problems';
 import Solutions from '@/components/Solutions';
 import Donate from '@/components/Donate';
 import Footer from '@/components/Footer';
+import { Analytics } from "@vercel/analytics/react";
 
 export default function Home() {
   return (
